@@ -1,0 +1,147 @@
+body {
+  background-color: #ccebff;
+  background-image: repeating-linear-gradient(
+  45deg,
+  rgba(255, 255, 255, 0.1) 0,
+  rgba(255, 255, 255, 0.1) 2px,
+  transparent 2px,
+  transparent 4px
+);
+  color: #002b6b;
+}
+
+.navbar {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+h1, .section-title {
+  color: #201b7e;
+  font-weight: bold;
+  animation: fadeIn 2s;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.profile-img {
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease, transform 2s ease;
+  transform: translateY(50px);
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-link:hover {
+  color: #00c6ff !important;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Tambahan untuk card prestasi */
+.prestasi-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: #200094;
+  overflow: hidden;
+}
+
+.prestasi-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.badge-custom {
+  background-color: #0d6efd;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .prestasi-img {
+    border-radius: 20px 20px 0 0;
+    height: 250px;
+  }
+}
+
+/* === Portfolio Page Styling === */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #201b7e;
+}
+
+.section-desc {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  color: #002b6b;
+  font-size: 1.1rem;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+  color: #002b6b;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.btn-primary {
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.about-text {
+  text-align: justify;
+  line-height: 1.8;
+}
+
