@@ -1,4 +1,6 @@
 💻 Personal Portfolio Website
+
+
 📖 Deskripsi
 Website ini merupakan portfolio pribadi yang saya buat sebagai media untuk menampilkan karya, pengalaman, serta pencapaian saya di dunia teknologi dan seni. Fokus utama website ini adalah memperkenalkan kemampuan saya dalam bidang Front-End Development dan Data Analyst, sekaligus menjadi wadah untuk menunjukkan kreativitas saya di bidang desain grafis, menari, dan menulis.
 
