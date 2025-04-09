@@ -1,20 +1,25 @@
 body {
   background-color: #ccebff;
   background-image: repeating-linear-gradient(
-  45deg,
-  rgba(255, 255, 255, 0.1) 0,
-  rgba(255, 255, 255, 0.1) 2px,
-  transparent 2px,
-  transparent 4px
-);
+    45deg,
+    rgba(255, 255, 255, 0.1) 0,
+    rgba(255, 255, 255, 0.1) 2px,
+    transparent 2px,
+    transparent 4px
+  );
   color: #002b6b;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
   background: linear-gradient(to right, #00c6ff, #0072ff);
+  /* background-color: #0d6efd; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1, .section-title {
+h1,
+.section-title {
   color: #201b7e;
   font-weight: bold;
   animation: fadeIn 2s;
@@ -25,8 +30,10 @@ p {
 }
 
 .profile-img {
-  transition: transform 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 .profile-img:hover {
@@ -142,6 +149,49 @@ p {
 
 .about-text {
   text-align: justify;
-  line-height: 1.8;
+  vertical-align: middle;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 1rem;
 }
 
+.name {
+  margin-right: 50px;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-desc {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
